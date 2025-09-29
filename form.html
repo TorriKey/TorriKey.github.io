@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/challenge.html">Challenge</a></li>
+            <li><a href="#">Recipe</a></li>
+            <li><a href="/form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Reserve Your Room</h1>
+        <h2>Our Reservation Policies</h2>
+    </header>
+
+    <section class="policies">
+        <ul>
+            <li>Check-in time after 3:00pm on</li>
+            <li>Check-out time by 11:00am or charges are incurred</li>
+            <li>Breakfast and afternoon tea/snacks included in cost</li>
+            <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+            <li>50% deposit required at booking</li>
+            <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+        </ul>
+    </section>
+
+    <section class="reserve">
+        <form method="post" name="reservation" data-netlify="true">
+
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="first name" name="first name" placeholder="First Name" required>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="last name" name="last name" placeholder="Last Name" required>
+            </div>
+
+             <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email" required>
+            </div>
+
+            <div>
+                <label for="Phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="phone number" required>
+            </div>
+
+             <div>
+                <label for="date">Check-in Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div>
+                <label for="date">Check-out Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div>
+                <label for="number">Number of guests (4 is a maximum)</label>
+                <input type="number" id="number" name="number" min="1" max="2" required>
+            </div>
+
+            <div>
+                <label for="Room Type">Room Type</label>
+                <select name="room type" id="room type" required>
+                    <option value="choose one" disabled hidden selected>Choose One</option>
+                    <option value="single bed">Single bed</option>
+                    <option value="double bed">Double bed</option>
+                </select>
+            </div>
+
+            <div>
+                <div>Ocean View (additional cost)</div>
+                <label for="view">Yes</label>
+                <input type="radio" id="yes" name="view" value="yes">
+
+                <label for="view">No</label>
+                <input type="radio" id="no" name="view" value="no">
+            </div>
+
+            <div>
+                <label for="textarea">List Allergies and Other Requests</label>
+                <textarea name="textarea" id="textarea">
+                    
+                </textarea>
+            </div>
+
+            <div>
+                <label for="file">Number of guests (4 is a maximum)</label>
+                <input type="file" id="file" name="file" required>
+            </div>
+
+            <div>
+                <label for="terms">I agree to all the terms listed above.</label>
+                <input type="checkbox" id="terms" name="terms" required>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                <input type="submit" value="submit">
+            </div>
+
+            <div>
+                <input type="reset" value="reset">
+            </div>
+
+        </form>
+    </section>
+
+    </div>
+</body>
+
+<footer>
+&copy;2025 Chestnut Bay Inn <br>
+Lancaster, PA
+</footer>
+
+</html>
