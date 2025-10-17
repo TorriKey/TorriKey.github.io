@@ -1,7 +1,7 @@
 html {
   color: rgb(9, 0, 64);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-  font-size: 85%;
+  font-size: 90%;
   line-height: 1.3;
   letter-spacing: 0.02rem;
 }
@@ -14,7 +14,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 1.30rem;
+    font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
     text-decoration: overline underline #FFCC00 7px;
@@ -22,19 +22,24 @@ h1 {
 }
 
 h2 {
-    font-size: 1.15rem;
+    font-size: 1.50rem;
 }
 
 nav li {
     color: rgb(177, 59, 255);
-    font-size: 93%;
+    font-size: 130%;
     list-style-type: none;
     letter-spacing: 1rem;
     text-transform: uppercase;
+}
+
+nav, header
+{
     text-align: center;
 }
 
 nav a:link, nav a:visited {
+    color: rgb(159, 16, 255);
     text-decoration: none;
 }
 
@@ -47,14 +52,46 @@ nav a:hover {
     text-decoration: underline dotted;
 }
 
-nav a:active {
-    color: rgb(151, 0, 165);
+nav a:active, nav a:focus {
+    color: rgb(101, 0, 110);
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+nav a::before, nav a::after {
+    content: "\2728";
+}
+
+.assignments li {
+    color: rgb(177, 59, 255);
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 0.1rem;
+}
+
+.assignments a:link, .assignments a:visited {
+    color: rgb(159, 16, 255);
+    text-decoration: none;
+}
+
+.assignments a:visited, .assignments a:hover {
+    color: rgb(71, 19, 150);
+    cursor: pointer;
+}
+
+.assignments a:hover {
+    text-decoration: underline dotted;
+}
+
+.assignments a:active, nav a:focus {
+    color: rgb(101, 0, 110);
     cursor: pointer;
     text-decoration: underline;
 }
 
-nav a::before {
-    content: "&#x2728";
+.assignments a::before {
+    content: "\2B50";
 }
 
 footer {
@@ -62,7 +99,13 @@ footer {
     font-size: 0.70rem;
 }
 
-footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+footer a:link, footer a:visited {
     color: blue;
     text-decoration: none;
 }
+
+footer a:hover, footer a:active, footer a:focus {
+    color: darkblue;
+    text-decoration: underline;
+}
+
