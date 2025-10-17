@@ -31,10 +31,6 @@ nav li {
     list-style-type: none;
     letter-spacing: 1rem;
     text-transform: uppercase;
-}
-
-nav 
-{
     text-align: center;
 }
 
@@ -55,11 +51,6 @@ nav a:active {
     color: rgb(151, 0, 165);
     cursor: pointer;
     text-decoration: underline;
-    
-}
-
-nav a:focus {
-    color: black;
 }
 
 nav a::before {
