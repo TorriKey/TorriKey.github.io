@@ -1,0 +1,154 @@
+/*
+ font-family: "Carter One", cursive;
+
+ font-family: "Montserrat", sans-serif;
+ */
+
+ html {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.17rem;
+    line-height: 125%;
+    color: rgb(75, 53, 25);
+  }
+
+* ,
+* ::before ,
+* ::after {
+    box-sizing: inherit;
+}
+
+nav {
+   background-color: rgb(199, 112, 31);
+   text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    background-color: rgba(247, 216, 180, 0.7);
+    color: rgb(32, 16, 1);
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: "Carter One", cursive;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 6% 0;
+    text-align: center;
+    text-shadow: 3px 5px #cccccc;
+}
+
+header {
+    margin: 10%;
+}
+
+img {
+   border-radius: 50%;
+   box-shadow: 3px 5px 3px #ccc;
+   float: left;
+   max-width: 30%;
+   margin-left: 10%;
+   margin-right: 10%;
+   shape-outside: circle(50%);
+}
+
+header h2 {
+    margin-top: -3%;
+}
+
+.rate {
+    clear: both;
+    font-size: 1.15rem;
+    margin-top: 6%;
+    text-align: center;
+}
+
+.emoji::after {
+    content: "\1F370";
+}
+
+.details, .ingredients, .instructions, .nutrition {
+    float: left;
+    width: 40%;
+}
+
+.details, .instructions {
+    margin-right: 16%;
+    margin-left: 2%;
+}
+
+blockquote {
+    background-color: rgb(253, 176, 104);
+    border-radius: 50%;
+    clear: both;
+    font-family: "Carter One", cursive;
+    font-size: 1rem;
+    height: 280px;
+    margin: 40px auto;
+    outline: dotted 6px rgb(199, 112, 31);
+    outline-offset: 10px;
+    padding: 78px 16px 0 20px;
+    width: 300px;
+}
+
+blockquote small {
+    text-align: right;
+}
+
+footer {
+    background-color: rgb(199, 112, 31);
+    color: white;
+    margin-top: 10px;
+    padding: 2% 0;
+    
+}
+
+footer a {
+    color: white;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.col1,
+.col2,
+.col3 {
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+footer p {
+    clear: both;
+}
