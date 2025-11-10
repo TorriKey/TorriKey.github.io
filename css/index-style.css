@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.50rem;
+    font-size: 1.60rem;
 }
 
 nav li {
@@ -109,3 +109,55 @@ footer a:hover, footer a:active, footer a:focus {
     text-decoration: underline;
 }
 
+h1 {
+ animation: textfade 2s linear;
+ position: relative;
+ display: block;
+}
+
+h2 {
+ animation: textfade 3s linear;
+}
+
+.image {
+    animation: imagepulse 3s ease-in-out;
+}
+
+nav {
+    float: right;
+    position: fixed;
+    left: 995px;
+}
+
+footer {
+    position: absolute;
+    left: 1220px;
+}
+
+@keyframes textfade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes imagepulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
