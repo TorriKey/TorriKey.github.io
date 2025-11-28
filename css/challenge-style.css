@@ -1,45 +1,61 @@
+:root {
+    --header-color: #bb1b47;
+    --link-color: #ff0000;
+    --link-hover-color: #4c00ff;
+    --link-visited-color: #800080;
+}
+
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
+    --ratio: 1.35;
+    
+    --size-one: calc( 1rem * var(--ratio) );
+    --size-two: calc( var(--size-one) * var(--ratio) );
+    --size-three: calc( var(--size-two) * var(--ratio) );
 }
 
 h1,h2,h3 {
-    color: #bb1b47;
+    color: var(--header-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-emphasis-color: #bb1b47;
+    text-emphasis-color: var(--header-color);
 }
 
 h1 {
-    font-size: 3.5rem;
-    font-weight: 400;
+    font-size: calc(var(--size-three));
+    font-weight: 900;
     letter-spacing: .1rem;
     text-transform: capitalize;  
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: calc(var(--size-two));
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: calc(var(--size-one));
 }
 
 .site-intro {
-    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
+nav {
+    background-image: linear-gradient(pink 30%, yellow);
 }
 
 nav a:link {
-    color: rgb(255, 0, 0);
+    color: var(--link-color);
     text-decoration: none;
 }
 
 nav a:visited {
-    color: rgb(128, 0, 128);
+    color: var(--link-visited-color);
     text-decoration: none;
 }
 
 nav a:hover {
-    color: rgb(76, 0, 255);
+    color: var(--link-hover-color);
     cursor: pointer;
     text-decoration: underline;
     
@@ -54,4 +70,8 @@ nav a:active {
 
 nav a:focus {
     color: black;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgb(255, 0, 140), yellow, white);
 }
